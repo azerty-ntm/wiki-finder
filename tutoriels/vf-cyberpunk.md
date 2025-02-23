@@ -1,3 +1,7 @@
+---
+title: "VF Cyberpunk 2077"
+layout: default.njk
+---
 <style>
 /* 🌑 Arrière-plan et texte */
 body {

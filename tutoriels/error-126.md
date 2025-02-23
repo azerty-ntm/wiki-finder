@@ -1,3 +1,7 @@
+---
+title: "Erreur 126"
+layout: default.njk
+---
 <style>
 /* 🌑 Arrière-plan sombre et design */
 body {

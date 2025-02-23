@@ -1,3 +1,8 @@
+---
+title: "Installation DragonBall Fighter Z"
+layout: default.njk
+---
+
 <style>
 /* 🌑 Arrière-plan sombre et design */
 body {

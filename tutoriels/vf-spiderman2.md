@@ -1,3 +1,7 @@
+---
+title: "VF Spiderman2"
+layout: default.njk
+---
 <style>
 /* 🌑 Arrière-plan et texte */
 body {

@@ -1,3 +1,8 @@
+---
+title: "Blocage Adobe"
+layout: default.njk
+---
+
 # 🚫 Éviter le blocage de licence d’Adobe  
 
 ## 🎥 **Tutoriel Vidéo**  

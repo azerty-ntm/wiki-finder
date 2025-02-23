@@ -1,3 +1,7 @@
+---
+title: "Installation Wallpaper Engine"
+layout: default.njk
+---
 <style>
 /* 🌑 Arrière-plan sombre et design */
 body {

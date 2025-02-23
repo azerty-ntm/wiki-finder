@@ -1,3 +1,7 @@
+---
+title: "Vloume manquant"
+layout: default.njk
+---
 <style>
 /* 🌑 Arrière-plan et texte */
 body {
