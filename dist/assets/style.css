@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  body {
+    font-family: Poppins,sans-serif;
+    background: 0 0!important
+  }
+  .page-header-section {
+    display: none!important
+  }
+  .v-footer {
+    display: none!important
+  }
+  .container,
+  .contents,
+  .flex,
+  .layout,
+  .page-col-content,
+  .v-application,
+  .v-application--wrap,
+  .v-footer,
+  .v-main,
+  .v-sheet,
+  .v-snack,
+  .v-toolbar {
+    background: 0 0!important;
+    box-shadow: none!important
+  }
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1
+  }
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.8)
+  }
+  .home-container {
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;      /* Centre verticalement */
+    height: 100vh;            /* Prend toute la hauteur de l'écran */
+    flex-wrap: wrap;          /* Permet de s’adapter aux petits écrans */
+    gap: 40px;
+    padding: 50px;
+  }
+  
+  .option-card {
+    width: 350px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(20,20,20,.85);
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+    transition: transform .3s ease,box-shadow .3s ease;
+    text-align: center;
+    position: relative;
+    z-index: 10
+  }
+  .option-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255,255,255,.2)
+  }
+  .option-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover
+  }
+  .option-info {
+    padding: 20px;
+    background: rgba(0,0,0,.7);
+    backdrop-filter: blur(8px);
+    text-align: center
+  }
+  .option-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: uppercase
+  }
+  .toc-anchor {
+    display: none!important
+  }
+  .option-description {
+    font-size: 1em;
+    color: #ddd;
+    line-height: 1.6;
+    padding: 0 10px
+  }
+  .easy-card {
+    border: 2px solid #4caf50
+  }
+  .hard-card {
+    border: 2px solid #e74c3c
+  }
+  .easy-card:hover {
+    box-shadow: 0 15px 35px rgba(76,175,80,.5)
+  }
+  .hard-card:hover {
+    box-shadow: 0 15px 35px rgba(231,76,60,.5)
+  }
+  @media (max-width:768px) {
+    .home-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px
+    }
+    .option-card {
+      width: 90%
+    }
+  }
+  .wiki-card {
+    width: 280px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #222;
+    box-shadow: 0 6px 12px rgba(0,0,0,.35);
+    transition: transform .3s ease,box-shadow .3s ease;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    position: relative
+  }
+  .wiki-card:hover {
+    box-shadow: 0 16px 32px rgba(255,0,0,.6);
+    transform: translateY(-10px) scale(1.05)
+  }
+  .wiki-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover
+  }
+  .wiki-content {
+    padding: 20px 15px 15px;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    top: -10px
+  }
+  .wiki-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f44;
+    margin: 5px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .4s ease, transform .4s ease;
+    white-space: normal; /* Permet les retours à la ligne */
+    text-align: center; /* Centre le texte */
+    word-wrap: break-word; /* Coupe les mots longs */
+    overflow-wrap: break-word; /* Assure la coupure des mots */
+}
+
+  .wiki-card:hover .wiki-title {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  .wiki-category {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: .9em;
+    color: #fff;
+    background: #f44;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px
+  }
+  .wiki-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    display: inline-block; /* Permet le retour automatique à la ligne */
+    word-wrap: break-word; /* Casse les mots longs */
+    overflow-wrap: break-word; /* Assure que les mots longs passent à la ligne */
+    text-align: center; /* Centre le texte */
+    max-width: 100%; /* Empêche le dépassement */
+}
+
+  .wiki-link:hover {
+    color: #2980b9;
+    text-decoration: underline
+  }
+/* 🎨 Style des boutons de tri */
+.filter-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn:hover {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(255, 65, 108, 0.5);
+}
+
+.filter-btn.active {
+  background: linear-gradient(45deg, #32CD32, #228B22);
+  box-shadow: 0 5px 10px rgba(50, 205, 50, 0.5);
+}
+.search-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#searchInput {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#searchInput::placeholder {
+  color: #ddd;
+}
+
+#searchInput:focus {
+  border-color: #ff3b3b;
+  box-shadow: 0 0 8px rgba(255, 59, 59, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}

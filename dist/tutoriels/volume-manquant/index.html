@@ -1,0 +1,145 @@
+<style>
+/* 🌑 Arrière-plan et texte */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 🔥 Titres stylisés */
+h1 {
+    background: linear-gradient(90deg, #ff3b3b, #ff9800);
+    padding: 14px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0 0 12px rgba(255, 59, 59, 0.6);
+    animation: glow 1.5s infinite alternate;
+}
+
+h2 {
+    color: #ff9800;
+    border-left: 6px solid #ff9800;
+    padding-left: 12px;
+    font-size: 22px;
+}
+
+/* 📦 Conteneurs dynamiques */
+.solution-box {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border-left: 6px solid #ff9800;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🟢 Étapes sous forme de badges élégants */
+.step {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff3b3b, #ff9800);
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin-right: 12px;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 59, 59, 0.9);
+}
+
+/* ⚠️ Alertes dynamiques */
+.alert {
+    border-left: 6px solid #ffeb3b;
+    background: rgba(255, 235, 59, 0.2);
+    padding: 14px;
+    color: #ffeb3b;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.8);
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* 🔗 Liens */
+a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #42a5f5;
+}
+
+/* 🌟 Animations */
+@keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255, 59, 59, 0.6); }
+    to { box-shadow: 0 0 20px rgba(255, 59, 59, 1); }
+}
+
+@keyframes flicker {
+    from { opacity: 1; }
+    to { opacity: 0.8; }
+}
+</style>
+<h1>📦 Je n’arrive pas à extraire mon jeu, ça me demande un volume manquant !</h1>
+<hr>
+<h2>❓ Explication</h2>
+<div class="solution-box">
+Votre jeu a été compressé en plusieurs **parties** (`.part1`, `.part2`, `.part3`...).  
+Si toutes les parties ne sont **pas dans le même dossier**, l’extraction ne peut pas se faire.  
+</div>
+<hr>
+<h2>🛠️ <strong>Solutions</strong></h2>
+<div class="solution-box">
+<span class="step">1️⃣</span> **Vérifier que toutes les parties sont bien téléchargées**  
+✔️ Assurez-vous d’avoir **toutes les parties** (`.part1`, `.part2`, etc.).  
+✔️ Comparez le poids des fichiers avec ceux indiqués sur le site.  
+</div>
+<div class="solution-box">
+<span class="step">2️⃣</span> **Placer tous les fichiers dans le même dossier**  
+✔️ Déplacez **toutes les parties** dans un **même dossier** avant d’extraire.  
+✔️ Assurez-vous qu’il n’y a pas de fichiers en **double ou renommés incorrectement**.  
+</div>
+<div class="solution-box">
+<span class="step">3️⃣</span> **Extraire avec WinRAR ou 7-Zip**  
+✔️ Faites un **clic droit** sur **le premier fichier** (`.part1.rar` ou `.part1`).  
+✔️ Choisissez **"Extraire ici"** avec **WinRAR** ou **7-Zip**.  
+✔️ Le logiciel détectera automatiquement les autres parties.  
+</div>
+<div class="solution-box">
+<span class="step">4️⃣</span> **Vérifier si un fichier est corrompu**  
+✔️ Ouvrez **WinRAR** et essayez d’extraire.  
+✔️ Si un message "archive corrompue" apparaît :  
+   - **Téléchargez à nouveau** le fichier signalé.  
+   - **Utilisez la fonction "Réparer l’archive"** de WinRAR.  
+</div>
+<hr>
+<h2>✅ <strong>Conclusion</strong></h2>
+<div class="solution-box">
+✔️ **Vérifiez les noms des fichiers (pas de caractères spéciaux).**  
+✔️ **Assurez-vous d’avoir assez d’espace libre sur votre disque.**  
+✔️ **Essayez avec un autre extracteur (`7-Zip`, `WinRAR`, `PeaZip`).**  
+</div>
+<div class="alert">
+📢 **Besoin d’aide ?** Rejoignez la communauté pour plus de solutions ! 🚀
+</div>

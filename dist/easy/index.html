@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy - Wiki</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<!-- 🎥 Vidéo de fond -->
+<div class="background-container">
+  <video autoplay loop muted class="background-video">
+    <source src="https://cfinder.xyz/np_assets/backgroundfinder.mp4" type="video/mp4">
+  </video>
+</div>
+<!-- 🔎 Barre de recherche -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="🔍 Rechercher un tutoriel..." onkeyup="searchArticles()">
+</div>
+
+<!-- 🔥 Menu de tri -->
+<div class="filter-container">
+  <button class="filter-btn active" data-filter="all">Tout Afficher</button>
+  <button class="filter-btn" data-filter="Téléchargement">Téléchargement</button>
+  <button class="filter-btn" data-filter="message-erreur">Message d'erreur</button>
+  <button class="filter-btn" data-filter="extraction-impossible">Extraction</button>
+  <button class="filter-btn" data-filter="Antivirus">Antivirus</button>
+</div>
+
+<!-- Conteneur principal -->
+<div class="home-container">
+
+  <!-- Bloc 1 -->
+  <div class="wiki-card Téléchargement">
+    <img src="https://th.bing.com/th/id/OIP.ji0_1gcTmfeJyptodgM_pgAAAA?rs=1&pid=ImgDetMainn" alt="Token invalide" class="wiki-image" />
+    <div class="wiki-content">
+      <h2 class="wiki-title">
+        <a href="/tutoriels/probleme-lootlabs/" class="wiki-link">Problème avec LootLabs</a>
+      </h2>        
+      <span class="wiki-category">Téléchargement</span>
+    </div>
+  </div>
+
+  <!-- Bloc 2 -->
+  <div class="wiki-card message-erreur">
+    <img src="https://media.discordapp.net/attachments/1343172747718557777/1343172812457775104/Capture_decran_2025-02-23_114803.png?ex=67bc4ea9&is=67bafd29&hm=7dd54058a5b0032c643d6530b4199ff3188cd64347eaf0b528056bf4c213bd8d&=&format=webp&quality=lossless&width=504&height=251" alt="Erreur 126" class="wiki-image" />
+    <div class="wiki-content">
+      <h2 class="wiki-title">
+        <a href="/tutoriels/error-126/" class="wiki-link">Erreur 126</a>
+      </h2>   
+      <span class="wiki-category">Message d'erreur</span>
+    </div>
+  </div>
+
+  <!-- Bloc 3 -->
+  <div class="wiki-card extraction-impossible">
+    <img src="https://th.bing.com/th/id/R.3cf0d25a9a4fff96e194333a58ce91e9?rik=HPdO2OOvtPh8Rw&pid=ImgRaw&r=0" class="wiki-image" />
+    <div class="wiki-content">
+      <h2 class="wiki-title">
+        <a href="/tutoriels/volume-manquant/" class="wiki-link">Volume manquant</a>
+      </h2>   
+      <span class="wiki-category">Extraction impossible</span>
+    </div>
+  </div>
+
+  <!-- Bloc 4 -->
+  <div class="wiki-card Téléchargement">
+    <img src="https://netxhack.com/wp-content/uploads/2022/10/qbittorrent-vpn-settings-iknowwhatyoudownload.com_.webp" alt="Torrent bloqué" class="wiki-image" />
+    <div class="wiki-content">
+      <h2 class="wiki-title">
+        <a href="/tutoriels/torrent-bloqué/" class="wiki-link">Téléchargement bloqué</a>
+      </h2>   
+      <span class="wiki-category">Téléchargement</span>
+    </div>
+  </div>
+
+  <!-- Bloc 5 -->
+  <div class="wiki-card Antivirus">
+    <img src="https://th.bing.com/th/id/OIP.T3vClORUJy8AWwJwXYkf1wHaEK?rs=1&pid=ImgDetMains" alt="Alerte virus" class="wiki-image" />
+    <div class="wiki-content">
+      <h2 class="wiki-title">
+        <a href="/tutoriels/faux-positif/" class="wiki-link">Antivirus</a>
+      </h2>   
+      <span class="wiki-category">Faux positif</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- 🎯 Script pour le tri -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".wiki-card");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        let filter = this.getAttribute("data-filter");
+
+        // Désactive les autres boutons et active le bon
+        buttons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Affichage des cartes selon le filtre
+        cards.forEach(card => {
+          if (filter === "all") {
+            card.style.display = "inline-block";
+          } else {
+            if (card.classList.contains(filter)) {
+              card.style.display = "inline-block";
+            } else {
+              card.style.display = "none";
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
+<script src="/assets/search.js"></script>
+
+</body>
+</html>
