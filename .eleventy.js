@@ -1,10 +1,11 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("site/assets");
+  // Copier les fichiers statiques (CSS, images, JS, etc.)
+  eleventyConfig.addPassthroughCopy("assets");
 
   return {
     dir: {
-      input: "site",
-      output: "dist"
+      input: ".",  // Prend la racine du projet
+      output: "dist" // Génère le site dans "dist"
     }
   };
 };
