@@ -8,7 +8,6 @@ body { background: linear-gradient(135deg, #1e1e1e, #292929); color: #E0E0E0; fo
 h1 { background: linear-gradient(90deg, #0078ff, #00c3ff); padding: 14px; border-radius: 10px; }
 </style>
 
-# Comment enlever l'overlay sur Assassin's Creed Mirage
 
 ## 🎥 Tutoriel Vidéo  
 🔗 [Lien vers le tutoriel](/tutoriels/overlay-acmirage)
