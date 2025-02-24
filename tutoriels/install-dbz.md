@@ -1,5 +1,5 @@
 ---
-title: "Installation DragonBall Fighter Z"
+title: "Comment enlever l'overlay sur Assassin’s Creed Mirage"
 layout: default.njk
 ---
 
@@ -48,140 +48,23 @@ h2 {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
-
-/* 🟢 Étapes sous forme de badges élégants */
-.step {
-    display: inline-block;
-    background: linear-gradient(135deg, #ff4b4b, #ff6b6b);
-    color: white;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 50px;
-    margin-right: 12px;
-    font-size: 15px;
-    box-shadow: 0 0 10px rgba(255, 75, 75, 0.6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.step:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 75, 75, 0.9);
-}
-
-/* 🎥 Style pour le tutoriel vidéo */
-.video-box {
-    background: rgba(255, 255, 255, 0.07);
-    padding: 16px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
-
-.video-box a {
-    display: inline-block;
-    padding: 10px 18px;
-    background: linear-gradient(135deg, #ff4b4b, #ff6b6b);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.video-box a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 75, 75, 0.9);
-}
-
-/* ⚠️ Alertes dynamiques */
-.alert {
-    border-left: 6px solid #ffeb3b;
-    background: rgba(255, 235, 59, 0.2);
-    padding: 14px;
-    color: #ffeb3b;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 235, 59, 0.8);
-    animation: flicker 1.5s infinite alternate;
-}
-
-/* 🔗 Liens */
-a {
-    color: #64b5f6;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #42a5f5;
-}
-
-/* 🌟 Animations */
-@keyframes glow {
-    from { box-shadow: 0 0 10px rgba(255, 75, 75, 0.6); }
-    to { box-shadow: 0 0 20px rgba(255, 75, 75, 1); }
-}
-
-@keyframes flicker {
-    from { opacity: 1; }
-    to { opacity: 0.8; }
-}
 </style>
 
-# 🐉 Installer Dragon Ball FighterZ  
+# 🏹 Comment enlever l'overlay sur Assassin’s Creed Mirage
 
-## 🎥 **Tutoriel Vidéo**  
-<div class="video-box">
-🔗 <a href="https://youtu.be/CibMBRs7Ub0?si=8BQXK1sHyaOkFt29" target="_blank">📺 VIDÉO D'INSTALLATION</a>
+## ✅ **Solution rapide**
+<div class="solution-box">
+<span class="step">✔️</span> **Appuyez deux fois sur la touche `P`** pour désactiver l'overlay.
 </div>
 
 ---
 
-## ✅ **Résumé des étapes (d’après la vidéo)**  
+## 🔧 **Explication**
+L'overlay peut apparaître automatiquement dans **Assassin’s Creed Mirage**, notamment à cause de certains raccourcis activés par défaut. En appuyant deux fois sur `P`, vous désactivez cet affichage intempestif.
 
-<div class="solution-box">
-<span class="step">1️⃣</span> **Télécharger les fichiers du jeu**  
-- Assurez-vous d’avoir la version complète du jeu et tous les fichiers nécessaires.  
-- Vérifiez que votre espace disque est suffisant.  
-</div>
-
-<div class="solution-box">
-<span class="step">2️⃣</span> **Extraire et installer Dragon Ball FighterZ**  
-- Utilisez **WinRAR** ou **7-Zip** pour extraire les fichiers compressés.  
-- Lancez l’**installateur du jeu** et suivez les instructions.  
-</div>
-
-<div class="solution-box">
-<span class="step">3️⃣</span> **Appliquer les mises à jour et patchs**  
-- Si des mises à jour sont incluses, installez-les **dans l’ordre indiqué**.  
-- Vérifiez que les fichiers du jeu ne sont pas corrompus après l’installation.  
-</div>
-
-<div class="solution-box">
-<span class="step">4️⃣</span> **Désactiver temporairement l’antivirus**  
-- Certains fichiers du jeu peuvent être détectés comme faux positifs.  
-- Ajoutez une **exception** pour le dossier du jeu dans votre antivirus.  
-</div>
-
-<div class="solution-box">
-<span class="step">5️⃣</span> **Lancer le jeu et tester**  
-- Exécutez le jeu en **mode administrateur** si nécessaire.  
-- Vérifiez que tous les paramètres sont bien configurés.  
-</div>
-
----
-
-## 🛠️ **En cas de problème**  
-<div class="solution-box">
-✔️ **Regardez bien la vidéo et suivez chaque étape**.  
-✔️ **Assurez-vous que tous les fichiers sont extraits et complets**.  
-✔️ **Redémarrez votre PC après l’installation**.  
-</div>
+Si le problème persiste, vérifiez les paramètres du jeu et désactivez les options d’affichage supplémentaires.
 
 <div class="alert">
 📢 **Besoin d’aide ?** Rejoignez la communauté pour plus d’infos ! 🚀
 </div>
+
